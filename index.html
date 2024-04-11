@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab #2 - Problemas basicos con javascript</title>
+</head>
+<body>
+
+<p>¿Qué es Javascript y en qué se asemeja a Java?</p>
+<p>JavaScript es un lenguaje de programación de alto nivel, interpretado, con tipado dinámico y débilmente tipado. Se utiliza principalmente para agregar interactividad a páginas web. Aunque su nombre lleva 'Java', JavaScript y Java son dos lenguajes distintos y no están relacionados directamente, aunque comparten ciertas similitudes en la sintaxis y en algunos conceptos</p>
+
+<script>
+
+var num1 = 10;
+var num2 = 5;
+
+console.log("Suma:", num1 + num2);
+console.log("Resta:", num1 - num2);
+console.log("Multiplicación:", num1 * num2);
+console.log("División:", num1 / num2);
+
+let str1 = "Hola";
+let str2 = "Mundo";
+
+console.log("Concatenación:", str1 + " " + str2);
+
+const constVar1 = 10;
+const constVar2 = "Hola";
+
+console.log("Tipo de dato de constVar1:", typeof constVar1);
+console.log("Tipo de dato de constVar2:", typeof constVar2);
+
+let objeto = {
+    numero: 42,
+    cadena: "Hola",
+    booleano: true,
+    objetoVacio: {}
+};
+
+console.log("Objeto:", objeto);
+
+function sumaMultiplos(num) {
+    let suma = 0;
+    for (let i = 1; i < num; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+
+console.log("Suma de múltiplos de 3 o 5 menores que 10:", sumaMultiplos(10));
+
+</script>
+
+</body>
+</html>
